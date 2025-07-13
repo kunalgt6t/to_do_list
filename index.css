@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Light Theme Variables */
+  --light-bg: #ffffff;
+  --light-text: #333333;
+  --light-primary: #4f46e5;
+  --light-secondary: #f3f4f6;
+  --light-border: #e5e7eb;
+  --light-shadow: rgba(0, 0, 0, 0.1);
+
+  /* Dark Theme Variables */
+  --dark-bg: #1f2937;
+  --dark-text: #f9fafb;
+  --dark-primary: #6366f1;
+  --dark-secondary: #374151;
+  --dark-border: #4b5563;
+  --dark-shadow: rgba(0, 0, 0, 0.3);
+
+  /* Gradient Theme Variables */
+  --gradient-bg: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --gradient-text: #ffffff;
+  --gradient-primary: #ff6b6b;
+  --gradient-secondary: rgba(255, 255, 255, 0.1);
+  --gradient-border: rgba(255, 255, 255, 0.2);
+  --gradient-shadow: rgba(0, 0, 0, 0.2);
+
+  /* Notebook Theme Variables */
+  --notebook-bg: #fefefe;
+  --notebook-text: #2c3e50;
+  --notebook-primary: #e74c3c;
+  --notebook-secondary: #ecf0f1;
+  --notebook-border: #bdc3c7;
+  --notebook-shadow: rgba(0, 0, 0, 0.1);
+  --notebook-paper: #fafafa;
+
+  /* Retro Theme Variables */
+  --retro-bg: #0f0f23;
+  --retro-text: #00ff00;
+  --retro-primary: #ff6b35;
+  --retro-secondary: #1a1a2e;
+  --retro-border: #00ff00;
+  --retro-shadow: rgba(0, 255, 0, 0.3);
+
+  /* Default theme */
+  --bg: var(--light-bg);
+  --text: var(--light-text);
+  --primary: var(--light-primary);
+  --secondary: var(--light-secondary);
+  --border: var(--light-border);
+  --shadow: var(--light-shadow);
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg);
+  color: var(--text);
+  transition: all 0.3s ease;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Theme Classes */
+.theme-light {
+  --bg: var(--light-bg);
+  --text: var(--light-text);
+  --primary: var(--light-primary);
+  --secondary: var(--light-secondary);
+  --border: var(--light-border);
+  --shadow: var(--light-shadow);
+}
+
+.theme-dark {
+  --bg: var(--dark-bg);
+  --text: var(--dark-text);
+  --primary: var(--dark-primary);
+  --secondary: var(--dark-secondary);
+  --border: var(--dark-border);
+  --shadow: var(--dark-shadow);
+}
+
+.theme-gradient {
+  --bg: var(--gradient-bg);
+  --text: var(--gradient-text);
+  --primary: var(--gradient-primary);
+  --secondary: var(--gradient-secondary);
+  --border: var(--gradient-border);
+  --shadow: var(--gradient-shadow);
+}
+
+.theme-notebook {
+  --bg: var(--notebook-bg);
+  --text: var(--notebook-text);
+  --primary: var(--notebook-primary);
+  --secondary: var(--notebook-secondary);
+  --border: var(--notebook-border);
+  --shadow: var(--notebook-shadow);
+}
+
+.theme-retro {
+  --bg: var(--retro-bg);
+  --text: var(--retro-text);
+  --primary: var(--retro-primary);
+  --secondary: var(--retro-secondary);
+  --border: var(--retro-border);
+  --shadow: var(--retro-shadow);
+} 
